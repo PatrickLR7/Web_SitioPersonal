@@ -1,0 +1,19 @@
+<header class="header">
+    <h1 class="headline">Patrick Loney Rojas</h1>
+    <ul class="header-subnav align-center dropdown menu" data-dropdown-menu>
+        <li><a href="index.html"><img alt="inicio" src="home_icon.png" width="18" height="18"></a></li>
+        <li><a href="misObjetivos.html">Mis Objetivos</a></li>
+        <li>
+        <a href="#">Computacion</a>
+        <ul class="menu">
+            <li><a href="computacion.html">¿Por qué Computacion?</a></li>
+            <li><a href="cursos.html">Cursos Preferidos</a></li>
+            <li><a href="compañerosYProf.html">Mis Compañeros y Profesores</a></li>
+            <li><a href="descargas.html">Descargas</a></li>
+        </ul>
+        </li>
+        <li><a href="pasatiempos.html">Pasatiempos</a></li>
+        <li><a href="acercaDe.html">Acerca de</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</header>

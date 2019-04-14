@@ -1,0 +1,2 @@
+Azul oscuro: #000046ff
+Azul claro:  #1cb5e0ff
