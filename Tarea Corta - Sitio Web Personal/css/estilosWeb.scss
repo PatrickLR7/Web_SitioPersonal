@@ -57,13 +57,22 @@
 
 // Mis estilos del sitio:
 
+html, body{
+  height: 100%;
+}
 body {
     background-image: url("../fondo_darkpaths.png");
     background-size: auto;
     background-position: center;
+    display: flex;
+    flex-direction: column;
     //background-color: #c0e7f3;
     //background: linear-gradient(#000046, #1cb5e0);
     //color: white;
+}
+
+.content{
+  flex: 1 0 auto;
 }
 
 
@@ -171,6 +180,7 @@ $transition: all .35s ease-in-out;
   }
 }
 
+
 .dropdown.menu {
   .submenu{
     background-color: #000046;
@@ -233,6 +243,7 @@ $transition: all .35s ease-in-out;
   color: white;
 }
 
+
 .card{
   background-color: rgba(0, 0, 70, 0.5);
   color: white;
@@ -243,3 +254,60 @@ $transition: all .35s ease-in-out;
   background-color: rgba(0, 0, 70, 0);
   align-self: center;
 }
+
+.social-footer {
+  padding: 1rem;
+  background: rgba(0, 0, 70, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  flex-shrink: 0;
+
+
+  .social-footer-icons {
+    li:last-of-type {
+      margin-right: 0;
+    }
+
+    .fa {
+      font-size: 1.3rem;
+      color: $white;
+
+      &:hover {
+        color: darken($dark-gray, 25%);
+        transition: color 0.3s ease-in;
+      }
+    }
+  }
+}
+
+.social-footer-index {
+  padding: 1rem;
+  background: rgba(0, 0, 70, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  flex-shrink: 0;
+
+  .social-footer-icons {
+    li:last-of-type {
+      margin-right: 0;
+    }
+
+    .fa {
+      font-size: 1.3rem;
+      color: $white;
+
+      &:hover {
+        color: darken($dark-gray, 25%);
+        transition: color 0.3s ease-in;
+      }
+    }
+  }
+}
+

@@ -4684,10 +4684,18 @@ html.is-reveal-open {
     .show-for-portrait {
       display: block !important; } }
 
+html, body {
+  height: 100%; }
+
 body {
   background-image: url("../fondo_darkpaths.png");
   background-size: auto;
-  background-position: center; }
+  background-position: center;
+  display: flex;
+  flex-direction: column; }
+
+.content {
+  flex: 1 0 auto; }
 
 #top-menu {
   background-color: #006eab;
@@ -4849,3 +4857,40 @@ body {
 .card-divider {
   background-color: rgba(0, 0, 70, 0);
   align-self: center; }
+
+.social-footer {
+  padding: 1rem;
+  background: rgba(0, 0, 70, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  flex-shrink: 0; }
+  .social-footer .social-footer-icons li:last-of-type {
+    margin-right: 0; }
+  .social-footer .social-footer-icons .fa {
+    font-size: 1.3rem;
+    color: #fefefe; }
+    .social-footer .social-footer-icons .fa:hover {
+      color: #4a4a4a;
+      transition: color 0.3s ease-in; }
+
+.social-footer-index {
+  padding: 1rem;
+  background: rgba(0, 0, 70, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  flex-shrink: 0; }
+  .social-footer-index .social-footer-icons li:last-of-type {
+    margin-right: 0; }
+  .social-footer-index .social-footer-icons .fa {
+    font-size: 1.3rem;
+    color: #fefefe; }
+    .social-footer-index .social-footer-icons .fa:hover {
+      color: #4a4a4a;
+      transition: color 0.3s ease-in; }
